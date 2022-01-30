@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 20:45:23 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/01/30 22:43:12 by rdutenke         ###   ########.fr       */
+/*   Created: 2022/01/30 22:08:48 by rdutenke          #+#    #+#             */
+/*   Updated: 2022/01/30 22:49:26 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_CLASS_H
-#define  ZOMBIE_CLASS_H
-#include <string>
+#ifndef ZOMBIE_H
+#define  ZOMBIE_H
+# include "Zombie.hpp"
 
-class Zombie 
-{
-
-public:
-	Zombie(void);
-	Zombie(std::string name);
-	~Zombie(void);
-	void		announce(void);
-	
-private:
-	std::string name;
-};
+Zombie* zombieHorde(int N, std::string name);
 
 #endif

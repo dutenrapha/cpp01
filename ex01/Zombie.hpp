@@ -6,7 +6,7 @@
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 20:45:23 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/01/30 22:43:12 by rdutenke         ###   ########.fr       */
+/*   Updated: 2022/01/30 22:44:54 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ public:
 	Zombie(void);
 	Zombie(std::string name);
 	~Zombie(void);
+	void		setName(std::string name);
 	void		announce(void);
 	
 private:

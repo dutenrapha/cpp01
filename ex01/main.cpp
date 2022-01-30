@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 20:45:23 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/01/30 22:43:12 by rdutenke         ###   ########.fr       */
+/*   Created: 2022/01/30 22:34:05 by rdutenke          #+#    #+#             */
+/*   Updated: 2022/01/30 22:53:10 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_CLASS_H
-#define  ZOMBIE_CLASS_H
-#include <string>
+#include "Zombie.hpp"
+#include "Zombie.h"
 
-class Zombie 
+int main(void)
 {
-
-public:
-	Zombie(void);
-	Zombie(std::string name);
-	~Zombie(void);
-	void		announce(void);
+	int		i;
+	Zombie*	horde;
 	
-private:
-	std::string name;
-};
-
-#endif
+	horde = zombieHorde(10, "fakeZombie");
+	for (i = 0; i < 10; i++) 
+	{
+		horde[i].announce();
+	}
+	delete [] horde;
+    return 0;
+}
