@@ -6,14 +6,13 @@
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 23:23:34 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/01/30 23:51:05 by rdutenke         ###   ########.fr       */
+/*   Updated: 2022/02/05 18:56:38 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
-
 
 int main()
 {

@@ -1,6 +1,6 @@
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
-CC = g++
+CC = c++
 FILE = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 NAME = main
 
